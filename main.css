@@ -1,0 +1,21 @@
+#leftPanel {
+	background-image: url("leftBG.jpg");
+	background-color: black;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+#header {
+	font-size: 95px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#list {
+	font-size: 18px;
+	font-weight: bold;
+	color: 	black;
+	background-color: #F8F8F8;
+	opacity: .8;
+}
