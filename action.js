@@ -1,8 +1,10 @@
-var productiveWebsite;
+var productiveWebsite = "http://www.maxalbert.me";
 
 var myTime = 6000;
 
 var myVar;
+
+var notification2;
 
 var options = {
 	body: "You've Started Your Homework!",
@@ -20,6 +22,18 @@ var options3 = {
 }
 
 function onStart() {
+
+  if (document.getElementById('r1').checked) {
+    myTime = document.getElementById('r1').value;
+  }
+  else if (document.getElementById('r2').checked) {
+    myTime = document.getElementById('r2').value;
+  }
+  else {
+    myTime = document.getElementById('r3').value; 
+  }
+
+  productiveWebsite = document.getElementById('f1').value;
   // Let's check if the browser supports notifications
   if (!("Notification" in window)) {
     alert("This browser does not support desktop notification");
@@ -48,18 +62,22 @@ function onStart() {
 }
 
 function notifyMe() {
-	//TODO: Check to see if the user is on a productive website
-	//If not do this:
-	var notification2 = new Notification("Reminder", options2);
+  var currentWebsite;
+  chrome.tabs.query({'active': true, 'currentWindow': true}, function (tabs) {
+      currentWebsite = tabs[0].url;
+  });
+  console.log(currentWebsite);
+
+	if(productiveWebsite != currentWebsite) {
+	 notification2 = new Notification("Reminder", options2);
+   notification2.onclick = function(event) {
+    event.preventDefault();
+    window.open(productiveWebsite, '_blank');
+    }
+  }
 }
 
 function onStop() {
-	var notification2 = new Notification("Time to relax!", options3);
+	var notification3 = new Notification("Time to relax!", options3);
 	window.clearInterval(myVar);
-}
-
-chrome.notifications.onClicked.addListener(redirectWindow);
-
-function redirectWindow() {
-	window.open(productiveWebsite);
 }
