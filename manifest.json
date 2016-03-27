@@ -1,0 +1,11 @@
+{
+    "name": "Focus Pocus",
+    "description": "We keep people on track",
+    "manifest_version" : 2,
+    "version" : "0.1",
+
+    "permissions" : [
+    "notifications"
+    ]
+
+}
