@@ -7,24 +7,24 @@ var myVar;
 var notification2;
 
 var options = {
-	body: "You've Started Your Homework!",
+	body: "You've started your homework!",
 	icon: "icon.png"
 }
 
 var options2 = {
-	body: "You still have unfinished HW!",
+	body: "Still have unfinished homework?",
 	icon: "icon.png"
 }
 
 var options3 = {
-	body: "No More Work Means No More Push Notifcations. C ya next time :D.",
+	body: "No more work means no more push notifcations. C ya next time :D.",
 	icon: "icon.png"
 }
 
 function onR1() {
   //<!--this should be value="180000"-->
   //Switch to 6000 for testing purposes
-  myTime = 180000;
+  myTime = 3000;
 }
 
 function onR2() {
@@ -39,6 +39,11 @@ function onStart() {
   window.clearInterval(myVar);
 
   productiveWebsite = document.getElementById('f1').value;
+
+  if(!(productiveWebsite.includes('http://') || productiveWebsite.includes('https://'))) {
+    productiveWebsite = 'https://' + productiveWebsite;
+  }
+
   // Let's check if the browser supports notifications
   if (!("Notification" in window)) {
     alert("This browser does not support desktop notification");
