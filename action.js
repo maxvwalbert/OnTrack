@@ -8,22 +8,23 @@ var notification2;
 
 var options = {
 	body: "You've Started Your Homework!",
-	icon: "Pencil-icon.png"
+	icon: "icon.png"
 }
 
 var options2 = {
 	body: "You still have unfinished HW!",
-	icon: "Pencil-icon.png"
+	icon: "icon.png"
 }
 
 var options3 = {
 	body: "No More Work Means No More Push Notifcations. C ya next time :D.",
-	icon: "Pencil-icon.png"
+	icon: "icon.png"
 }
 
 function onR1() {
   //<!--this should be value="180000"-->
-  myTime = 6000;
+  //Switch to 6000 for testing purposes
+  myTime = 180000;
 }
 
 function onR2() {
