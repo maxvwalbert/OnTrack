@@ -4,9 +4,6 @@
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
 		<!--- My CSS -->
 		<link rel="stylesheet" type="text/css" href="main.css">
 
@@ -14,57 +11,58 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 		<script src="action.js"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 	</head>
 	<body>
-		<div class="col-lg-8" id="leftPanel">
-			<h1 id="header">Focus Pocus</h1>
-			<h2 id="listHeader">Overview:</h2>
-			<ul id="list">
-				<li><b>Facebook Has Desktop Notifications - </b> It's almost impossible to escape social media now, which is seriously killing productivity</li>
-				<li><b>What If We Used That Same Technology For Good - </b> enter Focus Pocus, the premier huslters' push notifciation tool</li>
-				<li><b>What We Do - </b> If we notice you're off-track, we'll send you a push notifcation notifying you that there's still work to be done, money to be made, and a world to conquer. Better yet, our notifcations link back to your worksite of choice</li>
-			</ul>
-			<h2 id="listHeader">How Do I Start?</h2>
-			<ul id="list">
-				<li>Simply follow the steps on the right panel of the screen and you'll be up and running in no time</li>
-			</ul>
-			<h2 id="listHeader">How Can I Thank The Handsome Gentlemen Behind This Project?</h2>
-			<ul id="list">
-				<li>The biggest "thank you" we can recieve is a referal on social media</li>
-				<li>If you do so, be sure to @ me on <a href="https://www.facebook.com/max.albert1">Facebook</a> and <a href="https://twitter.com/maxvwalbert">Twitter</a></li>
-			</ul>
-		</div>
-		<div class="col-sm-4" id="rightPanel">
-			<h1 id="lpHeader">Study Mode!</h1>
-			<h2 id="lpHeader2">1. Enter info here</h2>
+		<div class="col-lg-12" id="rightPanel">
+
+			<h1 id="lpHeader">Focus Pocus</h1>
+			<div class="col-sm-4" id="left">
+				<div style="text-align: center;"><span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="font-size: 50px; color: #0074D9";></span></div>
+				<br>
+				<h2 id="lpHeader2">What Is Focus Pocus?</h2>
+				<p id="lpBody">Plain and simple, we help students stay on track while browsing the net. If we notice you go to a "trouble maker" site (Facebook, Reddit, ect.) we will send you a push notification notifying you that there's still work to be done, money to be made, and worlds to conqure. Better yet, our push notifications gracefully link back to your worksite of choice. We are the ultimate hustler's tool.</p>
+				<a href="http://facebook.com"><i class="fa fa-facebook-square" style="font-size: 40px;"></i></a>
+				<a href="http://facebook.com"><i class="fa fa-twitter-square" style="font-size: 40px;"></i></a>
+				<a href="http://facebook.com"><i class="fa fa-envelope" style="font-size: 40px;"></i></a>
+			</div>
+			<div class="col-sm-4" id="middle">
+				<div style="text-align: center;"><span class="glyphicon glyphicon-flash" aria-hidden="true" style="font-size: 50px; color: #FFDC00;"></span></div>
+				<br>
+				<h2 id="lpHeader2">Want A Demo?</h2>
 			<p id="lpBody">How often do you want reminders?</p>
 			<div class="radio" id="form">
-  				<label>
-  					<!--this should be value="180000"-->
-    				<input type="radio" name="exampleRadios" id="r1" value="6000" checked>
-    					3 minutes
-  				</label>
-  					<label>
-    					<input type="radio" name="exampleRadios" id="r2" value="600000">
-    					10 minutes
-  					</label>
-  				<label>
-    				<input type="radio" name="exampleRadios" id="r3" value="1200000">
-    					20 minutes
-  				</label>
+  				<div class="btn-group" role="group" aria-label="Basic example">
+  					<button type="button" class="btn btn-warning" onclick="onR1()">3 Minutes</button>
+  					<button type="button" class="btn btn-warning" onclick="onR2()">10 Minutes</button>
+  					<button type="button" class="btn btn-warning" onclick="onR3()">20 Minutes</button>
+				</div>
 			</div>
-			<p id="lpBody">Where are you grinding today?</p>
+			<br>
+			<p id="lpBody">Where are you working today?</p>
 			<input class="form-control" id="f1" type="text" placeholder="http://www.website.com">
 			<br>
-			<h2 id="lpHeader2">2. Hit the activate button</h2>
-			<div id="buttonPlace">
-			<button type="button" class="btn btn-success btn-lg" onclick="onStart()">Activate!</button>
-			<button type="button" class="btn btn-danger btn-lg" onclick="onStop()">Deactivate!</button>
+			<div>
+			<button type="button" class="btn btn-warning btn-lg" onclick="onStart()">Activate</button>
+			<button type="button" class="btn btn-warning btn-lg" onclick="onStop()">Deactivate</button>
+			<br><br><i id="cav">*Do not close this tab while the demo is active</br>*The demo will still send you notifications even if you're already working. Download the full version to get all the features.</i>
 		</div>
+			</div>
+			<div class="col-sm-4" id="right">
+				<div style="text-align: center;"><span class="glyphicon glyphicon-download-alt" aria-hidden="true" style="font-size: 50px; color: #2ECC40";></span></div>
+				<br>
+			<h2 id="lpHeader2">Get The Full Version</h2>
+				<button type="button" class="btn btn-success btn-lg">Get The Chrome Extension</button>
+				<br>
+				<br>
+				<p id="lpBody">With the 100% FREE chrome extension you have access to tons of new features: customizeable list of "troublemaker" sites, no need to keep a tab open, more options for when notifications are sent, and much much more. So what are you waiting for?</p>
+	</div>
 
 		</div>
 		<div class="footer" id="footer">
-			<p><a href="https://github.com/maxvwalbert/focuspocus">View Source</a> - Created by <a href="http://www.maxalbert.me">Max Albert</a> - Copyright 2016</p>
+			<p><a href="https://github.com/maxvwalbert/focuspocus">View Source</a> - Created by <a href="http://www.maxalbert.me">Max Albert</a> and <a href="http://www.benfreiband.rocks">Ben Freiband</a>- Copyright 2016</p>
 		</div>
 	</body>
 </html>

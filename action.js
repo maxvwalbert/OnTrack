@@ -21,17 +21,21 @@ var options3 = {
 	icon: "Pencil-icon.png"
 }
 
-function onStart() {
+function onR1() {
+  //<!--this should be value="180000"-->
+  myTime = 6000;
+}
 
-  if (document.getElementById('r1').checked) {
-    myTime = document.getElementById('r1').value;
-  }
-  else if (document.getElementById('r2').checked) {
-    myTime = document.getElementById('r2').value;
-  }
-  else {
-    myTime = document.getElementById('r3').value; 
-  }
+function onR2() {
+  myTime = 600000;
+}
+
+function onR3() {
+  myTime = 1200000;
+}
+
+function onStart() {
+  window.clearInterval(myVar);
 
   productiveWebsite = document.getElementById('f1').value;
   // Let's check if the browser supports notifications
@@ -62,19 +66,13 @@ function onStart() {
 }
 
 function notifyMe() {
-  var currentWebsite;
-  chrome.tabs.query({'active': true, 'currentWindow': true}, function (tabs) {
-      currentWebsite = tabs[0].url;
-  });
-  console.log(currentWebsite);
-
-	if(productiveWebsite != currentWebsite) {
+	//if(productiveWebsite != currentWebsite) {
 	 notification2 = new Notification("Reminder", options2);
    notification2.onclick = function(event) {
     event.preventDefault();
     window.open(productiveWebsite, '_blank');
     }
-  }
+  //}
 }
 
 function onStop() {

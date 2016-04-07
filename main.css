@@ -1,36 +1,15 @@
-#leftPanel {
-	background-image: url("leftBG.jpg");
-	background-color: black;
-	background-repeat: no-repeat;
-	height: 95%;
-}
-
-#header {
-	font-size: 95px;
-	color: #001f3f;
-	font-family: 'Raleway',sans-serif; font-weight: 800; line-height: 72px; margin: 24px 0 24px; text-align: left; text-transform: uppercase; 
-}
-
-#list {
-	font-size: 18px;
-	color: 	#001f3f;
-	background-color: #F8F8F8;
-	opacity: .8;
-	font-family: 'Raleway',sans-serif; font-weight: 500; line-height: 32px; margin: 0 0 24px;
-}
-
-#listHeader {
-	font-size: 32px;
-	color: #001f3f;
-	background-color: #F8F8F8;
-	opacity: .8;
-	font-family: 'Raleway',sans-serif; font-weight: 800; line-height: 36px; margin: 0 0 24px;
-}
+#lpBody { color: black; font-family: 'Raleway',sans-serif; font-size: 18px; font-weight: 700; line-height: 32px; margin: 0 0 24px; text-align: left;}
 
 #rightPanel {
-	background-color: #001f3f;
+	background: 
+	linear-gradient(
+      rgba(255, 255, 255, 0.70), 
+      rgba(255, 255, 255, 0.70)
+    ),
+	url("BG.jpg");
 	background-repeat: no-repeat;
 	height: 95%;
+	text-align: center;
 }
 
 #footer {
@@ -39,20 +18,21 @@
 	text-align: center;
 }
 
-#lpHeader { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase; }
+#lpHeader { color: black; font-family: 'Raleway',sans-serif; font-size: 84px; font-weight: 800; line-height: 72px; margin: 60 24 72px; text-align: center; text-transform: uppercase; }
 
 
-#lpHeader2 { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 30px; font-weight: 800; line-height: 36px; margin: 0 0 24px; text-align: center; }
+#lpHeader2 { color: black; font-family: 'Raleway',sans-serif; font-size: 30px; font-weight: 800; line-height: 36px; margin: 0 0 24px; text-align:}
 
 
-#lpBody { color: #f8f8f8; font-family: 'Raleway',sans-serif; font-size: 18px; font-weight: 500; line-height: 32px; margin: 0 0 24px; }
 
-#form { color: #f8f8f8; font-family: 'Raleway',sans-serif; font-size: 14px; font-weight: 300; margin: 0 0 24px; }
+#lpBodyBold { color: black; font-family: 'Raleway',sans-serif; font-size: 18px; font-weight: 800; line-height: 32px; margin: 0 0 24px;}
 
+#form { color: black; font-family: 'Raleway',sans-serif; font-size: 14px; font-weight: 300; margin: 0 0 24px;}
 
 #a { color: #c8c8c8; text-decoration: underline; }
 
+#bg { background-color: #F8F8F8; opacity: .75;}
 
 a:hover { color: #1c1c1c; text-decoration: underline; }
 
-#buttonPlace { text-align: center;}
+#buttonPlace { text-align: left;}
