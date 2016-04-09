@@ -24,7 +24,7 @@ var options3 = {
 function onR1() {
   //<!--this should be value="180000"-->
   //Switch to 6000 for testing purposes
-  myTime = 3000;
+  myTime = 180000;
 }
 
 function onR2() {
