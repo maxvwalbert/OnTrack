@@ -1,6 +1,6 @@
 var productiveWebsite = "http://www.maxalbert.me";
 
-var myTime = 6000;
+var myTime = 5000;
 
 var myVar;
 
@@ -22,17 +22,15 @@ var options3 = {
 }
 
 function onR1() {
-  //<!--this should be value="180000"-->
-  //Switch to 6000 for testing purposes
-  myTime = 180000;
+  myTime = 5000;
 }
 
 function onR2() {
-  myTime = 600000;
+  myTime = 180000;
 }
 
 function onR3() {
-  myTime = 1200000;
+  myTime = 600000;
 }
 
 function onStart() {
