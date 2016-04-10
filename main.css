@@ -1,4 +1,7 @@
-#lpBody { color: black; font-family: 'Raleway',sans-serif; font-size: 18px; font-weight: 700; line-height: 32px; margin: 0 0 24px; text-align: left;}
+#lpBody { color: black; font-family: 'Raleway',sans-serif; font-size: 16px; font-weight: 700; line-height: 22px; margin: 0 0 12px; text-align: left;}
+
+#lpBodyMiddle { color: black; font-family: 'Raleway',sans-serif; font-size: 16px; font-weight: 700; line-height: 22px; margin: 0 0 12px; text-align: center;}
+
 
 #rightPanel {
 	background: 
@@ -19,9 +22,9 @@
 	text-align: center;
 }
 
-#lpHeader { color: black; font-family: 'Raleway',sans-serif; font-size: 84px; font-weight: 800; line-height: 72px; margin: 0 0 60px; text-align: center; text-transform: uppercase; }
+#lpHeader { color: black; font-family: 'Raleway',sans-serif; font-size: 110px; font-weight: 800; line-height: 72px; margin: 0 0 20px; text-align: center; text-transform: uppercase; }
 
-#lpHeader2 { color: black; font-family: 'Raleway',sans-serif; font-size: 30px; font-weight: 800; line-height: 36px; margin: 0 0 24px; text-align:}
+#lpHeader2 { color: black; font-family: 'Raleway',sans-serif; font-size: 20px; font-weight: 800; line-height: 36px; margin: 0 0 12px; text-align:}
 
 #lpBodyBold { color: black; font-family: 'Raleway',sans-serif; font-size: 18px; font-weight: 800; line-height: 32px; margin: 0 0 24px;}
 
@@ -34,3 +37,26 @@
 a:hover { color: #1c1c1c; text-decoration: underline; }
 
 #buttonPlace { text-align: left;}
+
+.btn-xlarge {
+    padding: 18px 28px;
+    font-size: 32px; //change this to your desired size
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
+
+#cav {
+	font-size: 11px;
+}
+
+h3 {
+	font-size: 28px;
+	font-weight: 800px;
+	margin: 30px;
+}
+
+#middle {
+	text-align: center;
+}
