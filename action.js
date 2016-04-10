@@ -72,13 +72,11 @@ function onStart() {
 }
 
 function notifyMe() {
-	//if(productiveWebsite != currentWebsite) {
 	 notification2 = new Notification("Reminder", options2);
    notification2.onclick = function(event) {
     event.preventDefault();
     window.open(productiveWebsite, '_blank');
     }
-  //}
 }
 
 function onStop() {

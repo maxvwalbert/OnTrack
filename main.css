@@ -4,12 +4,16 @@
 
 
 #rightPanel {
-	background: 
-	linear-gradient(
-      rgba(255, 255, 255, 0.70), 
-      rgba(255, 255, 255, 0.70)
-    ),
-	url("BG.jpg");
+	background:
+		linear-gradient(
+			rgba(255, 255, 255, 0.70),
+			rgba(255, 255, 255, 0.70)
+		),
+		url("BG.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	background-repeat: no-repeat;
 	height: 95%;
 	width: 100%;
