@@ -44,7 +44,7 @@ a:hover { color: #1c1c1c; text-decoration: underline; }
 
 .btn-xlarge {
     padding: 18px 28px;
-    font-size: 32px; //change this to your desired size
+    font-size: 32px; /*change this to your desired size*/
     line-height: normal;
     -webkit-border-radius: 8px;
        -moz-border-radius: 8px;
